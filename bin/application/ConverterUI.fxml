@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.converter">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" layoutY="-10.0" stroke="TRANSPARENT" strokeType="INSIDE" width="554.0">
+         <fill>
+            <LinearGradient endX="0.8300970873786409" endY="0.7524271844660194">
+               <stops>
+                  <Stop color="#c165dd" />
+                  <Stop color="#5c27fe" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <TextField fx:id="input1" alignment="CENTER_RIGHT" layoutX="51.0" layoutY="185.0" prefHeight="53.0" prefWidth="284.0" promptText="Enter Value" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-prompt-text-fill: white;">
+         <font>
+            <Font name="Microsoft YaHei UI Light" size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="input2" alignment="CENTER_RIGHT" layoutX="51.0" layoutY="268.0" prefHeight="53.0" prefWidth="284.0" promptText="Enter Value" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-prompt-text-fill: white;">
+         <font>
+            <Font name="Microsoft YaHei UI Light" size="24.0" />
+         </font>
+      </TextField>
+      <ChoiceBox fx:id="cb1" layoutX="372.0" layoutY="192.0" prefHeight="39.0" prefWidth="78.0" style="-fx-background-color: white;" />
+      <ChoiceBox fx:id="cb2" layoutX="372.0" layoutY="275.0" prefHeight="39.0" prefWidth="78.0" style="-fx-background-color: white;" />
+      <Line endX="183.0" layoutX="151.0" layoutY="238.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Line endX="183.0" layoutX="151.0" layoutY="321.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label layoutX="55.0" layoutY="32.0" text="Base Converter" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="386.0" layoutY="159.0" text="B A S E" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Light" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="188.0" layoutY="366.0" mnemonicParsing="false" onAction="#solve" prefHeight="48.0" prefWidth="124.0" style="-fx-background-color: WHITE; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);" text="S O L V E" textAlignment="CENTER" textFill="#5c27fe" textOverrun="CLIP">
+         <font>
+            <Font name="Nirmala UI Semilight" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+      <Label layoutX="379.0" layoutY="435.0" text="SUM" textFill="#5c27fe">
+         <font>
+            <Font name="Segoe UI" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="312.0" layoutY="607.0" text="PRODUCT" textFill="#5c27fe">
+         <font>
+            <Font name="Segoe UI" size="30.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="cb3" layoutX="50.0" layoutY="484.0" prefHeight="39.0" prefWidth="78.0" style="-fx-background-color: #c165dd;" />
+      <ChoiceBox fx:id="cb4" layoutX="50.0" layoutY="660.0" prefHeight="39.0" prefWidth="78.0" style="-fx-background-color: #c165dd;" />
+      <Label layoutX="64.0" layoutY="446.0" text="B A S E" textFill="#5c27fe">
+         <font>
+            <Font name="Segoe UI Light" size="17.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="sumTxt" layoutX="166.0" layoutY="476.0" prefHeight="117.0" prefWidth="285.0" promptText="0" wrapText="true">
+         <font>
+            <Font name="Segoe UI Light" size="15.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="productTxt" layoutX="166.0" layoutY="650.0" prefHeight="117.0" prefWidth="285.0" promptText="0" wrapText="true">
+         <font>
+            <Font name="Segoe UI Light" size="15.0" />
+         </font>
+      </TextArea>
+      <Line endX="183.0" layoutX="267.0" layoutY="594.0" startX="-100.0" stroke="#c165dd" strokeWidth="2.0" />
+      <Line endX="183.0" layoutX="267.0" layoutY="766.0" startX="-100.0" stroke="#c165dd" strokeWidth="2.0" />
+      <Label layoutX="57.0" layoutY="72.0" prefHeight="93.0" prefWidth="422.0" text="This program accepts two numbers, of the same or different bases, and displays the sum and product in binary, decimal, octal or hexadecimal." textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Segoe UI Light" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
